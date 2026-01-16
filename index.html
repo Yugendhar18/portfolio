@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>V Yugendhar | Portfolio</title>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Smooth Scroll -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="main-header">
+    <div class="header-content">
+      <h1 class="portfolio-title">PORTFOLIO</h1>
+
+      <!-- Dark Mode Toggle -->
+      
+
+      <div class="profile-image-wrapper">
+        <img src="logo.jpeg" alt="V Yugendhar profile image" class="profile-img" />
+        <h2>V Yugendhar</h2>
+        <p>Computer Science Student | Web Developer</p>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+          <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+
+      </nav>
+      
+    </div>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero-section reveal" id="home">
+      <div class="container hero-content">
+        <h1>Hi, I'm V. Yugendhar</h1>
+        <h2>I build and design web experiences people love</h2>
+        <p>
+          I specialize in front-end development using HTML, CSS, and JavaScript.
+        </p>
+        <a href="#projects" class="cta-button primary-cta">
+          View My Projects
+        </a>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="features-section reveal" id="skills">
+      <div class="container">
+
+        <div class="feature-item">
+          <h3>Technical Skills</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+          </ul>
+        </div>
+
+        <div class="feature-item">
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Communication</li>
+            <li>Teamwork</li>
+            <li>Problem Solving</li>
+            <li>Adaptability</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects-section reveal" id="projects">
+      <div class="container">
+        <h1>Projects</h1>
+
+        <article class="feature-item">
+          <h2>Percentage Calculator</h2>
+          <p>
+            A web tool to calculate subject-wise and overall percentage for students.
+          </p>
+          <a href="https://yugendhar18.github.io/Academic-Percentage-Calculator-Tool/"
+             target="_blank" rel="noopener noreferrer">
+            View Project
+          </a>
+
+          <h3>Technologies Used</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </article>
+
+        <article class="feature-item">
+          <h2>Smart Attendance System (Facial Recognition)</h2>
+          <p>
+            An automated attendance system using facial recognition with email
+            notifications and attendance analytics.
+          </p>
+          <a href="https://yugendhar18.github.io/smart-attendence/" target="_blank" rel="noopener noreferrer">View Project</a>
+          <h3>Technologies Used</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about-section reveal" id="about">
+      <div class="container">
+        <h1>About Me</h1>
+        <p>
+          I am a final-year Computer Science student passionate about building
+          real-world applications and continuously improving my skills.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section reveal" id="contact">
+      <h2>Contact Me</h2>
+
+      <!-- Contact Form -->
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Social Icons -->
+      <div class="contact-icons">
+        <a href="https://wa.me/7815855008" target="_blank">
+          <img src="whatsapp-icon.png" alt="WhatsApp" width="40" />
+        </a>
+        <a href="mailto:vyugendhar18@gmail.com">
+          <img src="mail-icon.png" alt="Email" width="40" />
+        </a>
+        <a href="https://www.linkedin.com/in/v-yugendhar-250b78377" target="_blank">
+          <img src="linkedin-icon.png" alt="LinkedIn" width="40" />
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="main-footer">
+    <div class="footer-content">
+      <span>© 2025 V Yugendhar</span>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Button -->
+  <button id="scrollTopBtn" title="Go to top">⬆</button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
