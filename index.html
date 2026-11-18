@@ -1,188 +1,435 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>V Yugendhar | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="style.css" />
+    <title>V Yugendhar | Portfolio</title>
+
+    <meta name="description" content="Portfolio of V Yugendhar, Java Developer and Computer Science graduate.">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- ================= HEADER ================= -->
-  <header class="main-header">
-    <div class="header-content">
-      <h1 class="portfolio-title">PORTFOLIO</h1>
-
-      <!-- Dark Mode Toggle -->
-      
-
-      <div class="profile-image-wrapper">
-        <img src="photttt.jpeg" alt="V Yugendhar profile image" class="profile-img" />
-        <h2>V Yugendhar</h2>
-        <p>Computer Science Student | Web Developer</p>
-      </div>
-
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-          <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
-
-      </nav>
-      
+    <!-- SCROLL PROGRESS BAR -->
+    <div class="scroll-progress-container">
+        <div id="scroll-progress"></div>
     </div>
-  </header>
 
-  <!-- ================= MAIN ================= -->
-  <main>
 
-    <!-- Hero Section -->
-    <section class="hero-section reveal" id="home">
-      <div class="container hero-content">
-        <h1>Hi, I'm V. Yugendhar</h1>
-        <h2>I build and design web experiences people love</h2>
-        <h2>Strong foundation in Core Java, Object-Oriented Programming (OOP), SQL, JDBC, Hibernate,Spring and Spring boot</h2>
-        <br>
-        <p>
-         Computer Science graduate with a strong foundation in Core Java, Object-Oriented Programming (OOP), SQL, JDBC, Hibernate, and 
-          Spring. Currently undergoing Full Stack Java training with hands-on experience in database operations and web development. Seeking an 
-          entry-level Java Developer role to apply technical skills and contribute to enterprise application development.</p>
-        <a href="#projects" class="cta-button primary-cta">
-          View My Projects
-        </a>
-      </div>
-    </section>
+    <!-- ================= HEADER ================= -->
+    <header class="main-header" id="top">
 
-    <!-- Skills -->
-    <section class="features-section reveal" id="skills">
-      <div class="container">
+        <div class="header-content">
 
-        <div class="feature-item">
-          <h3>Technical Skills</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Java</li>
-            <li>JDBC</li>
-            <li>Hibernate</li>
-            <li>Spring boot</li>
-          </ul>
+            <a href="#home" class="logo">VY.</a>
+
+            <!-- Navigation -->
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Dark / Light Mode -->
+            <button id="theme-toggle"
+                    aria-label="Switch to dark mode"
+                    title="Toggle theme">
+                🌙
+            </button>
+
+            <!-- Mobile Menu -->
+            <button class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero-section reveal" id="home">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p class="hero-label">JAVA FULL STACK DEVELOPER</p>
+
+                    <h1>
+                        Hi, I'm <span>V. Yugendhar</span>
+                    </h1>
+
+                    <h2>
+                        I build and design web experiences
+                        with code and creativity.
+                    </h2>
+
+                    <p class="hero-description">
+                        Computer Science graduate with a strong foundation in
+                        Core Java, Object-Oriented Programming, SQL, JDBC,
+                        Hibernate, and Spring Boot. Currently undergoing Full Stack
+                        Java training with hands-on experience in database
+                        operations and web development. Seeking an entry-level
+                        Java Developer role to apply my technical skills and
+                        contribute to real-world application development.
+                    </p>
+
+                    <div class="hero-cta-buttons">
+
+                        <a href="#projects" class="cta-button primary-cta">
+                            View My Projects
+                        </a>
+
+                        <a href="#contact" class="cta-button secondary-cta">
+                            Contact Me
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Profile Image -->
+                <div class="hero-image">
+
+                    <img src="photttt.jpeg"
+                         alt="V Yugendhar profile photo"
+                         class="profile-img">
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================= SKILLS ================= -->
+        <section class="features-section reveal" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">WHAT I KNOW</p>
+
+                    <h1>My Skills</h1>
+
+                    <p>Technologies and skills I use to develop applications.</p>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <!-- Technical Skills -->
+                    <article class="feature-item">
+
+                        <div class="card-icon">💻</div>
+
+                        <h3>Technical Skills</h3>
+
+                        <ul class="skill-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React Basics</li>
+                            <li>Core Java</li>
+                            <li>JDBC</li>
+                            <li>Hibernate</li>
+                            <li>Spring Boot</li>
+                            <li>SQL</li>
+                        </ul>
+
+                    </article>
+
+
+                    <!-- Soft Skills -->
+                    <article class="feature-item">
+
+                        <div class="card-icon">🤝</div>
+
+                        <h3>Soft Skills</h3>
+
+                        <ul class="skill-list">
+                            <li>Communication</li>
+                            <li>Teamwork</li>
+                            <li>Problem Solving</li>
+                            <li>Adaptability</li>
+                            <li>Quick Learning</li>
+                        </ul>
+
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+        <section class="projects-section reveal" id="projects">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">MY WORK</p>
+
+                    <h1>Featured Projects</h1>
+
+                    <p>Some projects I have worked on.</p>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+                    <!-- PROJECT 1 -->
+                    <article class="project-card">
+
+                        <div class="project-number">PROJECT 01</div>
+
+                        <h2>Academic Percentage Calculator</h2>
+
+                        <p>
+                            Developed a web application to calculate subject-wise
+                            and overall academic percentages using dynamic,
+                            real-time calculations. Implemented dynamic subject
+                            addition without requiring changes to the underlying
+                            code and created a user-friendly interface.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="https://yugendhar18.github.io/Academic-Percentage-Calculator-Tool/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-link">
+                            View Project ↗
+                        </a>
+
+                    </article>
+
+
+                    <!-- PROJECT 2 -->
+                    <article class="project-card">
+
+                        <div class="project-number">PROJECT 02</div>
+
+                        <h2>Job Portal Application</h2>
+
+                        <p>
+                            Developed backend functionality for candidate and
+                            company workflows, including job posting, job
+                            searching, and application management. Implemented
+                            layered architecture using controllers, services,
+                            and repositories. Designed entity relationships
+                            using Hibernate/JPA and implemented job search,
+                            application status tracking, and withdrawal
+                            functionality using DTOs and repository queries.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>Hibernate</span>
+                            <span>SQL</span>
+                            <span>REST API</span>
+                        </div>
+
+                        <span class="project-link project-status">
+                            Backend Development
+                        </span>
+
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+        <section class="about-section reveal" id="about">
+
+            <div class="container about-content">
+
+                <div class="section-heading">
+
+                    <p class="section-label">WHO I AM</p>
+
+                    <h1>About Me</h1>
+
+                </div>
+
+                <p>
+                    I am a Computer Science graduate passionate about building
+                    real-world applications and continuously improving my
+                    programming skills. I enjoy learning new technologies,
+                    solving problems, and developing applications using Java
+                    and web technologies. My goal is to begin my career as a
+                    Java Developer and grow into a skilled software engineer.
+                </p>
+
+                <a href="#contact" class="cta-button primary-cta">
+                    Let's Connect
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+        <section class="contact-section reveal" id="contact">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">GET IN TOUCH</p>
+
+                    <h1>Contact Me</h1>
+
+                    <p>Feel free to reach out for opportunities or collaboration.</p>
+
+                </div>
+
+
+                <div class="contact-content">
+
+                    <!-- CONTACT DETAILS -->
+                    <div class="contact-info">
+
+                        <h2>Let's Talk</h2>
+
+                        <p>
+                            I am open to entry-level Java Developer opportunities,
+                            internships, and projects where I can learn and contribute.
+                        </p>
+
+                        <p class="contact-detail">
+                            <strong>Email:</strong>
+                            <a href="mailto:vyugendhar18@gmail.com">
+                                vyugendhar18@gmail.com
+                            </a>
+                        </p>
+
+                        <p class="contact-detail">
+                            <strong>Phone:</strong>
+                            <a href="tel:+917815855008">
+                                +91 7815855008
+                            </a>
+                        </p>
+
+
+                        <!-- SOCIAL LINKS -->
+                        <div class="contact-icons">
+
+                            <a href="https://wa.me/917815855008"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="WhatsApp">
+
+                                <img src="whatsapp-icon.png" alt="WhatsApp">
+
+                            </a>
+
+
+                            <a href="mailto:vyugendhar18@gmail.com"
+                               aria-label="Email">
+
+                                <img src="mail-icon.png" alt="Email">
+
+                            </a>
+
+
+                            <a href="https://www.linkedin.com/in/v-yugendhar-250b78377/"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="LinkedIn">
+
+                                <img src="linkedin-icon.png" alt="LinkedIn">
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONTACT FORM -->
+                    <form class="contact-form" id="contact-form">
+
+                        <input type="text"
+                               id="name"
+                               name="name"
+                               placeholder="Your Name"
+                               required>
+
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               placeholder="Your Email"
+                               required>
+
+                        <textarea id="message"
+                                  name="message"
+                                  rows="5"
+                                  placeholder="Your Message"
+                                  required></textarea>
+
+                        <button type="submit" class="cta-button primary-cta">
+                            Send Message ↗
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="main-footer">
+
+        <div class="container footer-content">
+
+            <p>© <span id="current-year"></span> V Yugendhar. All rights reserved.</p>
+
+            <a href="#top" class="footer-link">Back to top ↑</a>
+
         </div>
 
-        <div class="feature-item">
-          <h3>Soft Skills</h3>
-          <ul>
-            <li>Communication</li>
-            <li>Teamwork</li>
-            <li>Problem Solving</li>
-            <li>Adaptability</li>
-          </ul>
-        </div>
+    </footer>
 
-      </div>
-    </section>
 
-    <!-- Projects -->
-    <section class="projects-section reveal" id="projects">
-      <div class="container">
-        <h1>Projects</h1>
+    <!-- SCROLL TO TOP -->
+    <button id="scrollTopBtn"
+            title="Go to top"
+            aria-label="Scroll to top">
+        ↑
+    </button>
 
-        <article class="feature-item">
-          <h2>Percentage Calculator</h2>
-          <p>
-            Developed a web application to calculate subject-wise and overall academic percentages using dynamic, real-time calculations.Implemented dynamic subject addition without requiring changes to the underlying code and created a user-friendly interface with HTML,CSS,JavaScript and React(Basics). 
-          </p>
-          <a href="https://yugendhar18.github.io/Academic-Percentage-Calculator-Tool/"
-             target="_blank" rel="noopener noreferrer">
-            View Project
-          </a>
 
-          <h3>Technologies Used</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-        </article>
-
-        <article class="feature-item">
-          <h2>Job portal Application</h2>
-          <p>
-            Developed backend functionality for candidate and company workflows, including job posting, job searching, and application management.Implemented a layered architecture using controllers, services, and repositories to separate API handling, business logic, and database 
-            operations.Designed entity relationships for candidates, companies, jobs, skills, and applications using Hibernate/JPA.Implemented job search by role and required skill, application status checking, and application withdrawal functionality.Used DTOs and repository queries to support structured data retrieval and application-specific operations. 
-          </p>
-          <h3>Technologies Used</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Java</li>
-            <li>Spring boot</li>
-          </ul>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- About -->
-    <section class="about-section reveal" id="about">
-      <div class="container">
-        <h1>About Me</h1>
-        <p>
-          I am a Computer Science student passionate about building
-          real-world applications and continuously improving my skills.
-        </p>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="contact-section reveal" id="contact">
-      <h2>Contact Me</h2>
-
-      <!-- Contact Form -->
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-
-      <!-- Social Icons -->
-      <div class="contact-icons">
-        <a href="https://wa.me/7815855008" target="_blank">
-          <img src="whatsapp-icon.png" alt="WhatsApp" width="40" />
-        </a>
-        <a href="mailto:vyugendhar18@gmail.com">
-          <img src="mail-icon.png" alt="Email" width="40" />
-        </a>
-        <a href="https://www.linkedin.com/in/v-yugendhar-250b78377" target="_blank">
-          <img src="linkedin-icon.png" alt="LinkedIn" width="40" />
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="main-footer">
-    <div class="footer-content">
-      <span>© 2025 V Yugendhar</span>
-    </div>
-  </footer>
-
-  <!-- Scroll To Top Button -->
-  <button id="scrollTopBtn" title="Go to top">⬆</button>
-
-  <!-- JavaScript -->
-  <script src="script.js"></script>
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
 
 </body>
 </html>
